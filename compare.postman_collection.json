@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "a0b6417f-70b8-4883-a27c-ca6ddacb25b7",
+		"name": "compare",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "0.0.0.0:8000/0.1/cars",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"0.1",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cars filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "0.0.0.0:8000/0.1/cars?q={\"filters\":[{\"name\": \"plate\",\"op\":\"==\",\"val\":\"LME456\"}]}",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"0.1",
+						"cars"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{\"filters\":[{\"name\": \"plate\",\"op\":\"==\",\"val\":\"LME456\"}]}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"camioneta\",\n    \"plate\": \"DDD456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:8000/0.1/cars",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"0.1",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cars",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"camioneta\",\n    \"plate\": \"DDD456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:8000/0.1/cars/1",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"0.1",
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

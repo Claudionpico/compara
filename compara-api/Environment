@@ -1,0 +1,8 @@
+USERNAME=compara
+PASSWORD=comparaPass
+HOST=0.0.0.0
+PORT=8000
+DB_USER=compara
+DB_PASS=comparaPass
+DB_HOST=10.160.0.221
+DB_NAME=compara

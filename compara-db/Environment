@@ -1,0 +1,5 @@
+MYSQL_ROOT_PASSWORD=comparaPass
+MYSQL_DATABASE=compara
+MYSQL_USER=compara
+MYSQL_PASSWORD=comparaPass
+TZ=America/Argentina/Buenos_Aires
